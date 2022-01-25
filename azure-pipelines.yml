@@ -26,9 +26,6 @@ steps:
       
       ls
 
-
-
-
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
