@@ -27,11 +27,13 @@ steps:
       ls
 
 
+
+
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: '$(Build.BinariesDirectory)'
     includeRootFolder: true
-    archiveType: 'zip'
+    archiveType: '7z'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
 # - task: ArchiveFiles@2
